@@ -1,0 +1,183 @@
+.signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ef4f5f;
+    padding: 20px;
+}
+
+.signup-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 700px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.signup-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.message-error {
+    background-color: #fde8e8;
+    border: 1px solid #f3b1b1;
+    color: #c53030;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.message-success {
+    background-color: #e9f8f1;
+    border: 1px solid #b8e3d4;
+    color: #2f855a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    color: #718096;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ef4f5f;
+    box-shadow: 0 0 0 3px rgba(239, 79, 95, 0.3);
+}
+
+.form-file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.form-file-input::file-selector-button {
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #ffebeb;
+    color: #c53030;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form-file-input::file-selector-button:hover {
+    background-color: #ffcccc;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #ef4f5f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.signup-button:hover {
+    background-color: #e04e5d;
+}
+
+.signup-button:disabled {
+    background-color: #f29ca3;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.login-link-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #718096;
+}
+
+.login-link {
+    color: #ef4f5f;
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-decoration 0.2s ease;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .signup-card {
+        padding: 20px;
+    }
+    .signup-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .signup-form {
+        gap: 10px;
+    }
+    .form-label {
+        font-size: 13px;
+    }
+    .form-input, .form-file-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .form-file-input::file-selector-button {
+        padding: 6px 10px;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .signup-button {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .login-link-container {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,56 @@
+.carousel-container {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image {
+    width: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.info-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+.restaurant-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.restaurant-detail {
+    font-size: 30px;
+    color: #ccc;
+    margin-bottom: 3px;
+}
+
+.carousel-fallback {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .carousel-image {
+        height: 250px;
+    }
+    .info-overlay {
+        padding: 10px;
+    }
+    .restaurant-name {
+        font-size: 30px;
+    }
+    .restaurant-detail {
+        font-size: 30px;
+    }
+}
